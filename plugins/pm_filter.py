@@ -115,7 +115,7 @@ async def next_page(bot, query):
     if settings['links']:
         btn = []
         for file_num, file in enumerate(files, start=offset+1):
-            files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
+            files_link += f"""<b>\n\n{file_num}. <a href=https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
     else:
         btn = [[
             InlineKeyboardButton(text=f"{get_size(file['file_size'])} - {file['file_name']}", callback_data=f"file#{file['_id']}")
@@ -128,7 +128,7 @@ async def next_page(bot, query):
             InlineKeyboardButton("🔍 ǫᴜᴀʟɪᴛʏ", callback_data=f"quality#{key}#{req}#{offset}")]
         )
         btn.insert(1,
-            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}'))]
+            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://telegram.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}'))]
         )
     else:
         btn.insert(0,
@@ -215,7 +215,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     if settings['links']:
         btn = []
         for file_num, file in enumerate(files, start=1):
-            files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
+            files_link += f"""<b>\n\n{file_num}. <a href=https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
     else:
         btn = [[
             InlineKeyboardButton(text=f"{get_size(file['file_size'])} - {file['file_name']}", callback_data=f"file#{file['_id']}")
@@ -224,7 +224,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
     if settings['shortlink'] and not await is_premium(query.from_user.id, client):
         btn.insert(1,
-            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}')),
+            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://telegram.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}')),
             InlineKeyboardButton("🔍 ǫᴜᴀʟɪᴛʏ", callback_data=f"quality#{key}#{req}#{offset}")]
         )
     else:
@@ -269,7 +269,7 @@ async def lang_next_page(bot, query):
     if settings['links']:
         btn = []
         for file_num, file in enumerate(files, start=l_offset+1):
-            files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
+            files_link += f"""<b>\n\n{file_num}. <a href=https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
     else:
         btn = [[
             InlineKeyboardButton(text=f"{get_size(file['file_size'])} - {file['file_name']}", callback_data=f'file#{file["_id"]}')
@@ -278,7 +278,7 @@ async def lang_next_page(bot, query):
         ]
     if settings['shortlink'] and not await is_premium(query.from_user.id, bot):
         btn.insert(1,
-            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}')),
+            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://telegram.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}')),
             InlineKeyboardButton("🔍 ǫᴜᴀʟɪᴛʏ", callback_data=f"quality#{key}#{req}#{l_offset}")]
         )
     else:
@@ -332,7 +332,7 @@ async def quality_search(client: Client, query: CallbackQuery):
     if settings['links']:
         btn = []
         for file_num, file in enumerate(files, start=1):
-            files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
+            files_link += f"""<b>\n\n{file_num}. <a href=https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
     else:
         btn = [[
             InlineKeyboardButton(text=f"{get_size(file['file_size'])} - {file['file_name']}", callback_data=f'file#{file["_id"]}')
@@ -341,7 +341,7 @@ async def quality_search(client: Client, query: CallbackQuery):
         ]
     if settings['shortlink'] and not await is_premium(query.from_user.id, client):
         btn.insert(0,
-            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}'))]
+            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://telegram.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}'))]
         )
     else:
         btn.insert(0,
@@ -383,7 +383,7 @@ async def quality_next_page(bot, query):
     if settings['links']:
         btn = []
         for file_num, file in enumerate(files, start=l_offset+1):
-            files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
+            files_link += f"""<b>\n\n{file_num}. <a href=https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
     else:
         btn = [[
             InlineKeyboardButton(text=f"{get_size(file['file_size'])} - {file['file_name']}", callback_data=f'file#{file["_id"]}')
@@ -392,7 +392,7 @@ async def quality_next_page(bot, query):
         ]
     if settings['shortlink'] and not await is_premium(query.from_user.id, bot):
         btn.insert(0,
-            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}'))]
+            [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://telegram.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}'))]
         )
     else:
         btn.insert(0,
@@ -470,20 +470,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             user = query.message.from_user.id
         if int(user) != 0 and query.from_user.id != int(user):
             return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
-        await query.answer(url=f"https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file_id}")
+        await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file_id}")
 
     elif query.data.startswith("get_del_file"):
         ident, group_id, file_id = query.data.split("#")
         if not await is_premium(query.from_user.id, client):
             return await query.answer(f"Only for premium users, use /plan for details", show_alert=True)
-        await query.answer(url=f"https://t.me/{temp.U_NAME}?start=file_{group_id}_{file_id}")
+        await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=file_{group_id}_{file_id}")
         await query.message.delete()
 
     elif query.data.startswith("get_del_send_all_files"):
         ident, group_id, key = query.data.split("#")
         if not await is_premium(query.from_user.id, client):
             return await query.answer(f"Only for premium users, use /plan for details", show_alert=True)
-        await query.answer(url=f"https://t.me/{temp.U_NAME}?start=all_{group_id}_{key}")
+        await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=all_{group_id}_{key}")
         await query.message.delete()
 
     elif query.data.startswith("stream"):
@@ -516,7 +516,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
             await query.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(btn))
             return
-        await query.answer(url=f"https://t.me/{temp.U_NAME}?start={mc}")
+        await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start={mc}")
         await query.message.delete()
 
     elif query.data == "buttons":
@@ -936,9 +936,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         try:
             await client.send_message(query.from_user.id, f"Change your settings for <b>'{query.message.chat.title}'</b> as your wish. ⚙", reply_markup=InlineKeyboardMarkup(btn))
         except:
-            await query.answer(url=f"https://t.me/{temp.U_NAME}?start=settings_{query.message.chat.id}")
+            await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=settings_{query.message.chat.id}")
         btn = [[
-            InlineKeyboardButton('Go To PM', url=f"https://t.me/{temp.U_NAME}")
+            InlineKeyboardButton('Go To PM', url=f"https://telegram.me/{temp.U_NAME}")
         ]]
         await query.message.edit("Settings menu has been sent to PM", reply_markup=InlineKeyboardMarkup(btn))
 
@@ -956,7 +956,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if not files:
             await query.answer(f"Hello {query.from_user.first_name},\nSend New Request Again!", show_alert=True)
             return
-        await query.answer(url=f"https://t.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}")
+        await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}")
 
     elif query.data == "unmute_all_members":
         if not await is_check_admin(client, query.message.chat.id, query.from_user.id):
@@ -1077,7 +1077,7 @@ async def auto_filter(client, msg, s, spoll=False, title_search=None, user_id=No
     if settings['links']:
         btn = []
         for file_num, file in enumerate(files, start=1):
-            files_link += f"""<b>\n\n{file_num}. <a href=https://t.me/{temp.U_NAME}?start=file_{message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
+            files_link += f"""<b>\n\n{file_num}. <a href=https://telegram.me/{temp.U_NAME}?start=file_{message.chat.id}_{file['_id']}>[{get_size(file['file_size'])}] {file['file_name']}</a></b>"""
     else:
         btn = [[
             InlineKeyboardButton(text=f"{get_size(file['file_size'])} - {file['file_name']}", callback_data=f'file#{file["_id"]}')
@@ -1091,7 +1091,7 @@ async def auto_filter(client, msg, s, spoll=False, title_search=None, user_id=No
                 InlineKeyboardButton("🔍 ǫᴜᴀʟɪᴛʏ", callback_data=f"quality#{key}#{req}#{offset}")]
             )
             btn.insert(1,
-                [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{message.chat.id}_{key}'))]
+                [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://telegram.me/{temp.U_NAME}?start=all_{message.chat.id}_{key}'))]
             )
         else:
             btn.insert(0,
@@ -1108,7 +1108,7 @@ async def auto_filter(client, msg, s, spoll=False, title_search=None, user_id=No
     else:
         if settings['shortlink'] and not await is_premium(message.from_user.id, client):
             btn.insert(0,
-                [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{message.chat.id}_{key}'))]
+                [InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", url=await get_shortlink(settings['url'], settings['api'], f'https://telegram.me/{temp.U_NAME}?start=all_{message.chat.id}_{key}'))]
             )
         else:
             btn.insert(0,

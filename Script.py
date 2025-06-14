@@ -7,10 +7,10 @@ class script(object):
     MY_ABOUT_TXT = """★ Server: <a href=https://www.heroku.com>Heroku</a>
 ★ Database: <a href=https://www.mongodb.com>MongoDB</a>
 ★ Language: <a href=https://www.python.org>Python</a>
-★ Library: <a href=https://t.me/HydrogramNews>Hydrogram</a>"""
+★ Library: <a href=https://telegram.me/HydrogramNews>Hydrogram</a>"""
 
     MY_OWNER_TXT = """★ Name: HA Bots
-★ Username: @HA_Bots
+★ Username: @infinityflix4vf
 ★ Country: Sri Lanka 🇱🇰"""
 
     STATUS_TXT = """👤 Total Users: <code>{}</code>
@@ -48,7 +48,7 @@ I can't find the <b>{}</b> in my database! 🥲
 🎭 Genres: {genres}
 🌟 Rating: <a href={url}/ratings>{rating} / 10</a></b>"""
 
-    FILE_CAPTION = """<b><a href='https://t.me/MovieCabanBot'>{file_name}</a></b>"""
+    FILE_CAPTION = """<b><a href='https://telegram.me/MovieCabanBot'>{file_name}</a></b>"""
 
     WELCOME_TEXT = """👋 Hello {mention}, Welcome to {title} group! 💞"""
 
@@ -115,5 +115,5 @@ Support: {}"""
 
 - ꜱᴏᴜʀᴄᴇ - <a href=https://github.com/HA-Bots/Auto-Filter-Bot>ʜᴇʀᴇ</a>
 
-- ᴅᴇᴠʟᴏᴘᴇʀ - @HA_Bots"""
+- ᴅᴇᴠʟᴏᴘᴇʀ - @infinityflix4vf"""
 

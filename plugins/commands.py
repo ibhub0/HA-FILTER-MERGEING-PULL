@@ -62,7 +62,7 @@ async def start(client, message):
             InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='about')
         ],[
-            InlineKeyboardButton('🤑 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton('🤑 Buy Premium', url=f"https://telegram.me/{temp.U_NAME}?start=premium")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -108,7 +108,7 @@ async def start(client, message):
             reply_markup = None
         else:
             btn = [[
-                InlineKeyboardButton("📌 Get File 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
+                InlineKeyboardButton("📌 Get File 📌", url=f'https://telegram.me/{temp.U_NAME}?start={verify_status["link"]}')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
         await message.reply(f"✅ You successfully verified until: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
@@ -118,7 +118,7 @@ async def start(client, message):
     if IS_VERIFY and not verify_status['is_verified'] and not await is_premium(message.from_user.id, client):
         token = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
         await update_verify_status(message.from_user.id, verify_token=token, link="" if mc == 'inline_verify' else mc)
-        link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API, f'https://t.me/{temp.U_NAME}?start=verify_{token}')
+        link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API, f'https://telegram.me/{temp.U_NAME}?start=verify_{token}')
         btn = [[
             InlineKeyboardButton("🧿 Verify 🧿", url=link)
         ],[
@@ -194,7 +194,7 @@ async def start(client, message):
     files = files_
     settings = await get_settings(int(grp_id))
     if type_ != 'shortlink' and settings['shortlink'] and not await is_premium(message.from_user.id, client):
-        link = await get_shortlink(settings['url'], settings['api'], f"https://t.me/{temp.U_NAME}?start=shortlink_{grp_id}_{file_id}")
+        link = await get_shortlink(settings['url'], settings['api'], f"https://telegram.me/{temp.U_NAME}?start=shortlink_{grp_id}_{file_id}")
         btn = [[
             InlineKeyboardButton("♻️ Get File ♻️", url=link)
         ],[
