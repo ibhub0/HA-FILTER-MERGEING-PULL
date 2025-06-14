@@ -24,7 +24,7 @@ async def pm_search(client, message):
         return
     stg = db.get_bot_sttgs()
     if not stg.get('PM_SEARCH'):
-        return await message.reply_text('PM search was disabled!')
+        return await message.reply_text('PM search was disabled! contact @mpbotzsupport_bot')
     if await is_premium(message.from_user.id, client):
         s = await message.reply(f"<b><i>⚠️ `{message.text}` searching...</i></b>")
         # Get distinct titles first
@@ -571,10 +571,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=UPDATES_LINK)
+            InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+        ],[
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=UPDATES_LINK)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
