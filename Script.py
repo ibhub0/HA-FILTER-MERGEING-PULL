@@ -15,9 +15,11 @@ class script(object):
 ╰───────────────⍟</b>"""
     
     MY_OWNER_TXT = """<b>╭────[ ᴍʏ ᴅᴇᴛᴀɪʟs ]────⍟
-★ Username: @infinityflix4vf
-★ Country: Sri Lanka 🇱🇰"""
-
+├⍟
+├⍟
+├⍟
+├⍟
+╰───────────────⍟</b>"""
     STATUS_TXT = """👤 Total Users: <code>{}</code>
 😎 Premium Users: <code>{}</code>
 👥 Total Chats: <code>{}</code>
