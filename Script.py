@@ -2,7 +2,7 @@ class script(object):
 
     START_TXT = """<b>ʜᴇʏ {}, <i>{}</i>
     
-ɪ ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ. ɪᴛ'ꜱ ᴇᴀꜱʏ ᴛᴏ ᴜꜱᴇ ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀꜱ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇʀᴇ ᴍᴏᴠɪᴇꜱ</b>"""
+ɪ ᴀᴍ ꜰᴀꜱᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ. ɪᴛ'ꜱ ᴇᴀꜱʏ ᴛᴏ ᴜꜱᴇ ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀꜱ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇʀᴇ ᴍᴏᴠɪᴇꜱ</b>"""
 
     MY_ABOUT_TXT = """<b>╭────[ ᴍʏ ᴅᴇᴛᴀɪʟs ]────⍟
 ├⍟ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/mpxprofilter_bot>˹𝐏ʀᴏ 𝐌ᴏᴠɪᴇꜱ 𝐒ᴇᴀʀᴄʜ 𝐁ᴏᴛ 𝐕-𝐈𝐈˼</a>
@@ -15,11 +15,12 @@ class script(object):
 ╰───────────────⍟</b>"""
     
     MY_OWNER_TXT = """<b>╭────[ ᴍʏ ᴏᴡɴᴇʀ ]────⍟
-├➤ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @ɪɴғɪɴɪᴛʏғʟɪx4ᴠғ
-├➤ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @ɪɴғɪɴɪᴛʏ ʙᴏᴛᴢᴢ
-├➤ ᴄᴏ-ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @ʜᴅ ᴍᴏᴠɪᴇs ʜᴜʙ
-├➤ ᴀᴅᴍɪɴ : ᴍᴏᴅᴇʀᴀᴛᴏʀ
+├➤ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href=https://t.me/infinityflix4vf>@ɪɴғɪɴɪᴛʏғʟɪx4ᴠғ</a>
+├➤ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :<a href=https://t.me/infinitybot_backuop[]> @ɪɴғɪɴɪᴛʏ ʙᴏᴛᴢᴢ</a>
+├➤ ᴄᴏ-ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href=https://t.me/hd_movies_hub01/7>@ʜᴅ ᴍᴏᴠɪᴇs ʜᴜʙ</a>
+├➤ ᴀᴅᴍɪɴ : <a href=https://t.me/owner_contact_mbot>ᴍᴏᴅᴇʀᴀᴛᴏʀ</a>
 ╰───────────────⍟</b>"""
+
     STATUS_TXT = """👤 Total Users: <code>{}</code>
 😎 Premium Users: <code>{}</code>
 👥 Total Chats: <code>{}</code>
@@ -55,7 +56,7 @@ I can't find the <b>{}</b> in my database! 🥲
 🎭 Genres: {genres}
 🌟 Rating: <a href={url}/ratings>{rating} / 10</a></b>"""
 
-    FILE_CAPTION = """<b><a href='https://telegram.me/MovieCabanBot'>{file_name}</a></b>"""
+    FILE_CAPTION = """<b><a href='https://telegram.me/infinityflix4vf '>{file_name}</a></b>"""
 
     WELCOME_TEXT = """👋 Hello {mention}, Welcome to {title} group! 💞"""
 
@@ -120,7 +121,4 @@ Support: {}"""
 
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
-- ꜱᴏᴜʀᴄᴇ - <a href=https://github.com/HA-Bots/Auto-Filter-Bot>ʜᴇʀᴇ</a>
-
-- ᴅᴇᴠʟᴏᴘᴇʀ - @infinityflix4vf"""
-
+- ꜱᴏᴜʀᴄᴇ - <a href=https://telegram.me/infinityflix4vf>ʜᴇʀᴇ</a>"""
